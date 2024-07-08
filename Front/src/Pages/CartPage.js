@@ -36,7 +36,7 @@ const CartPage = () => {
 
       // Make the API call with the token in the headers
       const response = await axios.post(
-        'http://localhost:5000/payment',
+        'https://fruit-hub-five.vercel.app/payment',
         { totalAmount , email },
         {
           headers: {
@@ -51,7 +51,7 @@ const CartPage = () => {
       }
 
           const res = await axios.post(
-          'http://localhost:5000/order',
+          'https://fruit-hub-five.vercel.app/order',
           { cartItems, totalAmount, email },
           {
             headers: {

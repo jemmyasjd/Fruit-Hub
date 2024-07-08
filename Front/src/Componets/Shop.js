@@ -7,7 +7,7 @@ const Shop = () => {
     // Fetch product data from backend
     const fetchProducts = async () => {
       try {
-        const response = await fetch('http://localhost:5000/product');
+        const response = await fetch('https://fruit-hub-five.vercel.app/product');
         const data = await response.json();
         // console.log('Products:', data);
         setProducts(data);
