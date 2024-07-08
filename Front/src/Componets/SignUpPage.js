@@ -4,7 +4,7 @@ import { SignUp } from '@clerk/clerk-react';
 const SignUpPage = () => {
   return (
     <div className="auth-container">
-      <SignUp routing="path" path="/sign-up" signInUrl='https://freshfruithub.vercel.app/sign-in' fallbackRedirectUrl={'/home'}/>
+      <SignUp signInUrl='/sign-in'/>
     </div>
   );
 };

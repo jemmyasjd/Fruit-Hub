@@ -28,8 +28,8 @@ async function Payment(req,res){
             }
           ],
           mode: 'payment',
-          success_url: 'http://localhost:3000',
-          cancel_url: 'http://localhost:5000/cancel',
+          success_url: 'https://fruithub.netlify.app/',
+          cancel_url: 'https://fruithub.netlify.app/',
           customer_email: email,
         });
     
