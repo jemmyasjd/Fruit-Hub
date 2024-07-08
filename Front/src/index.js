@@ -15,7 +15,7 @@ console.log(PUBLISHABLE_KEY)
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ClerkProvider publishableKey={PUBLISHABLE_KEY}>
+    <ClerkProvider publishableKey='pk_test_d2hvbGUtbW9uc3Rlci04NS5jbGVyay5hY2NvdW50cy5kZXYk'>
       <App />
     </ClerkProvider>
   </React.StrictMode>
