@@ -8,6 +8,7 @@ const OderRouter = require('./routes/order');
 
 
 const app = express();
+const port = process.env.PORT || 5000;
 
 connectDB('mongodb+srv://jemmy33jd:Mongodb.33@cluster0.1auwi0e.mongodb.net/fruits_db');
 
@@ -32,6 +33,6 @@ app.post('/test', (req, res) => {
 });
 
 
-app.listen(5000, () => {
+app.listen(port, () => {
     console.log('Server running on port 5000');
 });
