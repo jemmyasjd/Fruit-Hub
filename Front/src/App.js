@@ -26,8 +26,10 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path="https://freshfruithub.vercel.app/" element={<ProtectedRoute element={<HomePage />} />} />
-          <Route path="https://freshfruithub.vercel.app/home" element={<ProtectedRoute element={<HomePage />} />} />
+          {/* <Route path="https://freshfruithub.vercel.app/" element={<ProtectedRoute element={<HomePage />} />} /> */}
+          <Route path="/" element={<HomePage />} />
+          {/* <Route path="https://freshfruithub.vercel.app/home" element={<ProtectedRoute element={<HomePage />} />} /> */}
+          <Route path="/home" element={<HomePage />} />
           <Route path="https://freshfruithub.vercel.app/shop" element={<ProtectedRoute element={<ShopPage />} />} />
           <Route path="https://freshfruithub.vercel.app/news" element={<ProtectedRoute element={<NewsPage />} />} />
           <Route path="https://freshfruithub.vercel.app/contact" element={<ProtectedRoute element={<ContactPage />} />} />
