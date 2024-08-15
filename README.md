@@ -31,7 +31,7 @@ Fruit-Hub is a web application designed to provide users with an effortless way 
 - **Payment Integration:** Integrating multiple payment gateways and ensuring they worked seamlessly across different devices required thorough testing and debugging.
 - **User Authentication:** Implementing a secure yet user-friendly authentication system with Clerk, while ensuring compatibility with other components, presented some initial difficulties.
 
-## CI/CD Pipeline Architecture Explanation : 
+## CI/CD Pipeline Architecture Explanation 🔗 : 
 
 - **Code Repository and Trigger:**
   - The process begins with the code hosted on GitHub. Any changes or new commits trigger GitHub Actions.
