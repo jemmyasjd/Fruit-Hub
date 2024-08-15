@@ -3,7 +3,7 @@
 ## **Explanation Video : Coming Soon...**
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/56634775-a3c7-403f-89d2-ba34359428b2" width="45%"/>
+  <img src="https://github.com/user-attachments/assets/07654c36-be7d-4e39-a431-0b9836dc8941" width="45%"/>
   <img src="https://github.com/user-attachments/assets/37c70a10-e8d6-45d9-9ddc-c467883026d9" width="45%"/>
 </p>
 
