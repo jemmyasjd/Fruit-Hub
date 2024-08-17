@@ -3,8 +3,8 @@ const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 
 async function Payment(req,res){
     try {
-        const host = req.get('host'); // Get the host from the request
-        const protocol = req.protocol; //
+        // const host = req.get('host'); // Get the host from the request
+        // const protocol = req.protocol; //
         const { totalAmount, email } = req.body;
     
         if (!totalAmount) {
@@ -30,8 +30,8 @@ async function Payment(req,res){
             }
           ],
           mode: 'payment',
-          success_url: `${window.location.origin}/`,
-          cancel_url:  `${window.location.origin}/`,
+          success_url: `https://freshfruithub.vercel.app/`,
+          cancel_url:  `https://freshfruithub.vercel.app/`,
           customer_email: email,
         });
     
