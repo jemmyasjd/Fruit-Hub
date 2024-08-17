@@ -1,6 +1,6 @@
 # [Fruit Hub 🍉](https://freshfruithub.vercel.app/)
 
-## **Explanation Video : Coming Soon...**
+## **Explanation Video :[Click here](https://drive.google.com/file/d/1V8OQogTAfyzlPNTDTb1UXS8hb5id5NSQ/view?usp=drivesdk)**
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/07654c36-be7d-4e39-a431-0b9836dc8941" width="45%"/>
