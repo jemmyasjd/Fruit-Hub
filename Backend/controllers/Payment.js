@@ -30,8 +30,8 @@ async function Payment(req,res){
             }
           ],
           mode: 'payment',
-          success_url: `${protocol}://${host}/`,
-          cancel_url: `${protocol}://${host}/`,
+          success_url: `${window.location.origin}/`,
+          cancel_url:  `${window.location.origin}/`,
           customer_email: email,
         });
     
