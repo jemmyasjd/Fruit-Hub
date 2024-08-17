@@ -10,7 +10,9 @@ const OderRouter = require('./routes/order');
 const app = express();
 const port = process.env.PORT || 5000;
 
-connectDB('mongodb+srv://jemmy33jd:Mongodb.33@cluster0.1auwi0e.mongodb.net/fruits_db');
+// console.log(port);
+
+connectDB(process.env.MONGO_URL);
 
 app.use(cors());
 app.use(express.json());

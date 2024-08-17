@@ -4,11 +4,17 @@ import './index.css';
 import App from './App';
 import { ClerkProvider } from '@clerk/clerk-react';
 
+// get the publish key from the env
+
+const key = process.env.REACT_APP_PUBLISH_KEY;
+
+// console.log(key);
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ClerkProvider publishableKey={'pk_test_d2hvbGUtbW9uc3Rlci04NS5jbGVyay5hY2NvdW50cy5kZXYk'}>
+    <ClerkProvider publishableKey={key}>
       <App />
     </ClerkProvider>
   </React.StrictMode>

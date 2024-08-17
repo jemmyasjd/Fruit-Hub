@@ -5,6 +5,8 @@ import axios from 'axios';
 import './cart.css';
 import { Clerk } from '@clerk/clerk-js';
 
+const key = process.env.REACT_APP_PUBLISH_KEY;
+
 const CartPage = () => {
   const location = useLocation();
   const [totalAmount, setTotalAmount] = useState(0);
@@ -25,7 +27,7 @@ const CartPage = () => {
     try {
       // Get the token from Clerk
 
-      const clerk = new Clerk('pk_test_d2hvbGUtbW9uc3Rlci04NS5jbGVyay5hY2NvdW50cy5kZXYk');
+      const clerk = new Clerk(key);
       await clerk.load();
 
       // console.log(clerk.user.emailAddresses[0].emailAddress);
@@ -36,7 +38,7 @@ const CartPage = () => {
 
       // Make the API call with the token in the headers
       const response = await axios.post(
-        'https://fruit-hub-five.vercel.app/payment',
+        `${process.env.REACT_APP_API_URL}/payment` ,
         { totalAmount , email },
         {
           headers: {
@@ -51,7 +53,7 @@ const CartPage = () => {
       }
 
           const res = await axios.post(
-          'https://fruit-hub-five.vercel.app/order',
+          `${process.env.REACT_APP_API_URL}/order`,
           { cartItems, totalAmount, email },
           {
             headers: {

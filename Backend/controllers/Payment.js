@@ -1,8 +1,10 @@
-const stripe = require('stripe')('sk_test_51O2atUSH0CmyMvGVzrTne3sfW5v575zZ6b0T5WqtLy80S1SjgHQqIK6pb1mORSDp1qdK5GQVKSQ7YBuJa67LR8OM00gO26Pkyx');
+const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 
 
 async function Payment(req,res){
     try {
+        const host = req.get('host'); // Get the host from the request
+        const protocol = req.protocol; //
         const { totalAmount, email } = req.body;
     
         if (!totalAmount) {
@@ -28,8 +30,8 @@ async function Payment(req,res){
             }
           ],
           mode: 'payment',
-          success_url: 'https://fruithub.netlify.app/',
-          cancel_url: 'https://fruithub.netlify.app/',
+          success_url: `${protocol}://${host}/`,
+          cancel_url: `${protocol}://${host}/`,
           customer_email: email,
         });
     

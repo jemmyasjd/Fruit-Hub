@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
+
+
 const Shop = () => {
   const [products, setProducts] = useState([]);
 
@@ -7,7 +9,7 @@ const Shop = () => {
     // Fetch product data from backend
     const fetchProducts = async () => {
       try {
-        const response = await fetch('https://fruit-hub-five.vercel.app/product');
+        const response = await fetch(`${process.env.REACT_APP_API_URL}/product`);
         const data = await response.json();
         // console.log('Products:', data);
         setProducts(data);
