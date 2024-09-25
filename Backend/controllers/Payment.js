@@ -10,9 +10,9 @@ app.use(bodyParser.json());
 // Payment function
 async function Payment(req, res) {
   try {
-    const { totalAmount, email } = req.body;
+    const { totalAmount, email, cartItems } = req.body;
 
-    if (!totalAmount) {
+    if (!totalAmount || !cartItems || !email) {
       return res.status(400).json({ error: 'Total amount is required' });
     }
 
