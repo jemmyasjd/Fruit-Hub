@@ -39,7 +39,7 @@ const CartPage = () => {
       // Make the API call with the token in the headers
       const response = await axios.post(
         `${process.env.REACT_APP_API_URL}/payment` ,
-        { totalAmount , email, cartItems },
+        { totalAmount , email },
         {
           headers: {
             'Content-Type': 'application/json',// Include the token here
@@ -50,17 +50,18 @@ const CartPage = () => {
         localStorage.removeItem('cartItems');
         window.location.href = response.data.url;
         console.log(response.data.url);
-        // const res = await axios.post(
-        //   `${process.env.REACT_APP_API_URL}/order`,
-        //   { cartItems, totalAmount, email },
-        //   {
-        //     headers: {
-        //       'Content-Type': 'application/json',
-        //     },
-        //   }
-        // );
-        // console.log(res.data.message);
       }
+
+          const res = await axios.post(
+          `${process.env.REACT_APP_API_URL}/order`,
+          { cartItems, totalAmount, email },
+          {
+            headers: {
+              'Content-Type': 'application/json',
+            },
+          }
+        );
+        console.log(res.data.message);
     } catch (error) {
       console.error('Error processing payment:', error);
       // Handle the error (e.g., show an error message to the user)
