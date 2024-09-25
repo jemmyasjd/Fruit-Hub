@@ -47,7 +47,7 @@ const Shop = () => {
         <h1>
           <span style={{ color: 'orange' }}>Our </span> Product
         </h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ut quibusdam rem eum?</p>
+        <p>Explore our handpicked selection of the freshest, high-quality fruits delivered straight from the farm to your doorstep, ensuring you and your family enjoy the best nature has to offer.</p>
       </center>
       <div className="container mt-5 p-0">
         <div className="row mt-5 justify-content-center p-1">

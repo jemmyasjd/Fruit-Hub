@@ -10,8 +10,10 @@ const Deal = () => {
                 <center>
                     <h1> Deal Of The <span style={{ color: "orange" }}>Month </span>  </h1>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ut
-                        quibusdam rem eum?
+                        Discover the freshest, most succulent fruits of the season at 
+                    </p>
+                    <p>
+                    unbeatable prices. Our special deal this month offers you the perfect blend of quality and savings, straight from the farm to your home.
                     </p>
                 </center>
                 <div class="container mt-3">
@@ -27,8 +29,7 @@ const Deal = () => {
                         >
                             <h2>Deal Of The Month</h2>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor
-                                tincidunt turpis, sed posuere metus euismod ac.
+                            Enjoy nature's finest produce, packed with nutrients and bursting with flavor, to keep you and your family healthy and satisfied.
                             </p>
                             <p class="pt-0">Per Kg</p>
                             <h3 class="pt-0"><b>₹15</b></h3>

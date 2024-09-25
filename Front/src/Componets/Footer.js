@@ -53,7 +53,7 @@ const Footer = () => {
             </div>
           </div>
           <p className="mb-0 text-center mt-4">
-            © 2023 <Link to="#" className="text-light"> Fresh FruitHub.</Link> All rights
+            © 2024 <Link to="#" className="text-light"> Fresh FruitHub.</Link> All rights
             reserved.
           </p>
         </div>

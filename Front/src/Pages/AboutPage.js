@@ -25,8 +25,7 @@ const AboutPage = () => {
                             <div class="content">
                                 <h3>Home Delivery</h3>
                                 <p>
-                                    sit voluptatem accusantium dolore mque laudantium, totam rem
-                                    aperiam, eaque ipsa quae ab illo.
+                                Enjoy the convenience of fresh fruits delivered right to your doorstep, ensuring you always have healthy options on hand.
                                 </p>
                             </div>
                         </div>
@@ -39,8 +38,7 @@ const AboutPage = () => {
                             <div class="content">
                                 <h3>Best Price</h3>
                                 <p>
-                                    sit voluptatem accusantium dolore mque laudantium, totam rem
-                                    aperiam, eaque ipsa quae ab illo.
+                                    We offer top-quality fruits at prices that won't break the bank, making healthy eating affordable for everyone.
                                 </p>
                             </div>
                         </div>
@@ -53,8 +51,7 @@ const AboutPage = () => {
                             <div class="content">
                                 <h3>Custom Box</h3>
                                 <p>
-                                    sit voluptatem accusantium dolore mque laudantium, totam rem
-                                    aperiam, eaque ipsa quae ab illo.
+                                    Create your own custom fruit box, tailored to your preferences, and enjoy a personalized selection of fresh fruits.
                                 </p>
                             </div>
                         </div>
@@ -67,8 +64,7 @@ const AboutPage = () => {
                             <div class="content">
                                 <h3>Quick Refund</h3>
                                 <p>
-                                    sit voluptatem accusantium dolore mque laudantium, totam rem
-                                    aperiam, eaque ipsa quae ab illo.
+                                    If you're not satisfied with your purchase, we offer a hassle-free quick refund process to ensure your peace of mind.
                                 </p>
                             </div>
                         </div>

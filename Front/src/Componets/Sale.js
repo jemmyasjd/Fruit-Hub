@@ -7,8 +7,7 @@ const Sale = () => {
                 <center class="mt-5 pt-2">
                     <h1><span style={{ color: "orange" }}>Sale! </span>Is On</h1>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ut
-                        quibusdam rem eum?
+                    Get ready to savor the taste of fresh, hand-picked fruits at unbeatable prices. Our December sale brings you the season's best produce with discounts that make healthy eating more affordable than ever.
                     </p>
                 </center>
                 <div class="container-fluid mt-3">

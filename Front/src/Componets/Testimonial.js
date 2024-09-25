@@ -7,8 +7,7 @@ const Testimonial = () => {
                 <center class="mt-5">
                     <h1><span style={{ color: "orange" }}>Our </span> Testimonial</h1>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ut
-                        quibusdam rem eum?
+                        
                     </p>
                 </center>
                 <div class="container-fluid" style={{ backgroundColor: "rgb(237, 234, 222)" }}>

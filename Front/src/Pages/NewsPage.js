@@ -17,13 +17,13 @@ const NewsPage = () => {
                 class="container-fluid justify-content-center"
                 style={{ marginTop: "90px" }}
             >
-                <center>
+                {/* <center>
                     <h1><span style={{ color: "orange" }}>Our </span> Product</h1>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ut
                         quibusdam rem eum?
                     </p>
-                </center>
+                </center> */}
                 <div class="container pb-5">
                     <div class="row mt-5 justify-content-center">
                         <div class="col-12 col-md-12 col-sm-12 col-xl-3 col-lg-3 mt-4 p-1">
