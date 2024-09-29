@@ -1,7 +1,7 @@
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 const User = require('../models/User'); // Assuming you have a User model
 
-const endpointSecret = process.env.STRIPE_WEBHOOK_SECRET;
+const endpointSecret = 'whsec_3vsUeGLQ6Go7UsaSK1jWhy8FthLVQBze';
 
 const handleWebhook = async (req, res) => {
   const sig = req.headers['stripe-signature'];
