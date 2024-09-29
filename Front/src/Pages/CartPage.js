@@ -52,16 +52,16 @@ const CartPage = () => {
         console.log(response.data.url);
       }
 
-          const res = await axios.post(
-          `${process.env.REACT_APP_API_URL}/order`,
-          { cartItems, totalAmount, email },
-          {
-            headers: {
-              'Content-Type': 'application/json',
-            },
-          }
-        );
-        console.log(res.data.message);
+        //   const res = await axios.post(
+        //   `${process.env.REACT_APP_API_URL}/order`,
+        //   { cartItems, totalAmount, email },
+        //   {
+        //     headers: {
+        //       'Content-Type': 'application/json',
+        //     },
+        //   }
+        // );
+        // console.log(res.data.message);
     } catch (error) {
       console.error('Error processing payment:', error);
       // Handle the error (e.g., show an error message to the user)
