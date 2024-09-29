@@ -5,6 +5,7 @@ require('dotenv').config();
 const PayemntRouter = require('./routes/payment');
 const ProductRouter = require('./routes/product');
 const OderRouter = require('./routes/order');
+const SuccessRouter = require('./routes/success.js')
 
 
 const app = express();
@@ -22,6 +23,7 @@ app.use(express.urlencoded({extended: true}));
 app.use('/payment', PayemntRouter);
 app.use('/product', ProductRouter);
 app.use('/order', OderRouter);
+app.use('/webhook', SuccessRouter);
 
 app.get('/', (req, res) => {
     res.send('Hello World');

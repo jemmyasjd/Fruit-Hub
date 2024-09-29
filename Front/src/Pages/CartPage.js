@@ -39,7 +39,7 @@ const CartPage = () => {
       // Make the API call with the token in the headers
       const response = await axios.post(
         `${process.env.REACT_APP_API_URL}/payment` ,
-        { totalAmount , email },
+        { totalAmount , email, cartItems },
         {
           headers: {
             'Content-Type': 'application/json',// Include the token here
@@ -47,7 +47,7 @@ const CartPage = () => {
         }
       );
       if (response.status === 200) {
-        localStorage.removeItem('cartItems');
+        // localStorage.removeItem('cartItems');
         window.location.href = response.data.url;
         console.log(response.data.url);
       }
