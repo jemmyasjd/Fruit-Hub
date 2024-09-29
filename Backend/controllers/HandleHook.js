@@ -5,11 +5,13 @@ const endpointSecret = 'whsec_3vsUeGLQ6Go7UsaSK1jWhy8FthLVQBze';
 
 const handleWebhook = async (req, res) => {
   const sig = req.headers['stripe-signature'];
+  console.log(req.body);
+  const payloadString = JSON.stringify(req.body, null, 2);
 
   let event;
 
   try {
-    event = stripe.webhooks.constructEvent(req.body, sig, endpointSecret);
+    event = stripe.webhooks.constructEvent(payloadString, sig, endpointSecret);
   } catch (err) {
     console.error('⚠️  Webhook signature verification failed.', err.message);
     return res.status(400).send(`Webhook Error: ${err.message}`);
